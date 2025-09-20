@@ -1,8 +1,8 @@
 Project Blackacre
 
 ## Introduction 🗝️
-This repository contains a machine learning regressor designed to predict **fair market prices** for both **real estate sales** and **rentals**.  
-The model leverages historical property data and key real estate attributes (location, size, amenities, etc.) to estimate accurate property valuations.  
+This repository contain machine learning models designed to predict **fair market prices** for both **real estate sales** and **rentals**.  
+The model leverages historical property data and key real estate attributes (e.g. location, sqaure feet, bedrooms, bathrooms  amenities, repair and maintenance costs, etc.) to forecast accurate property valuations.  
 
 This tool is useful for:
 - Buyers & sellers seeking fair pricing guidance  
@@ -11,17 +11,10 @@ This tool is useful for:
 - Real estate professionals enhancing pricing strategies  
 
 <div style="display: flex; overflow-x: auto; gap: 10px; white-space: nowrap;">
-  <img src="nyc.jpg" alt="NYC Skyline" width="300"/>
-  <img src="monaco.jpg" alt="Monaco" width="300"/>
-  <img src="dubai.jpg" alt="Dubai" width="300"/>
-
-  <img src="yosemite.jpg" alt="Yosemtie Park" width="300"/>
-  <img src="zion.jpeg" alt="Zion National Park" width="300"/>
-  <img src="everest.jpg" alt="Mt. Everest" width="300"/>
-
-  <img src="miami.jpg" alt="Miami" width="300"/>
-  <img src="rio.jpg" alt="Rio de Janeiro" width="300"/>
-  <img src="maldives.jpg" alt="Maldives" width="300"/>
+  <img src="images/dubai.jpg" alt="Dubai" width="300"/>
+  <img src="images/yosemite.jpg" alt="Yosemtie Park" width="300"/>
+  <img src="images/everest.jpg" alt="Mt. Everest" width="300"/>
+  <img src="images/rio.jpg" alt="Rio de Janeiro" width="300"/>
 </div>
 
 # Table of Contents  📖 
@@ -39,12 +32,12 @@ This tool is useful for:
   - Location (city, state, zip code, latitude, longitude, neighborhood data)  
   - Square footage
   - Lot size  
-  - Property age & condition  
+  - Building age
   - Amenities & upgrades (e.g., pool, garage, modern appliances)  
-  - Nearby schools, universities, places of interest, and distance to transit (airports, trains, ports) 
-  - Property taxes, repairs and maintenance, required rates of return 
+  - Nearby schools, universities, places of interest, and distance to transit (e.g. airports, trains, seaports) 
+  - Property taxes, repairs and maintenance, and required rates of return 
 - Customizable for different geographic regions  
-- Built-in evaluation metrics (RMSE, MAE, R²) for model performance  
+- Built-in evaluation metrics (RMSE, MAE, R²) for model accuracy  
 - Extensible to support additional features (e.g., zoning, crime rate, walkability)  
 
 ## How to Use Demo Model
@@ -60,10 +53,10 @@ This tool is useful for:
     pip install -r requirements.txt
 4. **Prepare the dataset**:
    Place your property dataset (.csv or .json) inside the data/ folder.
-   Ensure it contains columns for "Neighborhood", "Lot Area", "Year Built", "Gr Liv Area"
+   For defaul settings, ensure your dataset contains columns for "Neighborhood", "Lot Area", "Year Built", "Gr Liv Area" for the selling price regression or "bedrooms", "bathrooms", "size_sqft", "building_age_yrs", "floor", "has_elevator", and "has_roofdeck" for the rental regressor. 
 5. **Turn on Data Pipeline**:
    ```bash
-   python real_estate_data_pipeline.py
+   python real_estate_data_pipeline.py 
 
 ## Technologies 🛠
 - Python 3.10+ 🐍
@@ -86,7 +79,21 @@ For questions, collaborations, or contributions:
 
 ## Acknowledgements 🙏
 - Scikit-learn for robust ML utilities
-- Kaggle and open real estate datasets for training data
+- UC Irvine, Kaggle and open source real estate datasets for training data
 - Open-source contributors and the real estate research community
 - Inspiration from industry leaders in AI-driven valuation models
 - I am grateful. Thank you! 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
