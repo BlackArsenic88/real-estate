@@ -1,15 +1,17 @@
-Project Level
+Project Blackacre
 
-# Introduction
-The purpose of the project is to provide access to healthy, delicious, and fresh foods so people have zero hunger. 
+## Introduction
+This repository contains a machine learning regressor designed to predict **fair market prices** for both **real estate sales** and **rentals**.  
+The model leverages historical property data and key real estate attributes (location, size, amenities, etc.) to estimate accurate property valuations.  
 
-We’re aiming to eliminate food deserts where there are no healthy food options available. Overly processed foods high in sodium, high fructose corn syrups, saturated and trans fats, and other additives have led to an obesity epidemic. Obesity and visceral fats are directly linked to chronic conditions such as heart disease, strokes, diabetes, cancer, and lower quality of life. 
+This tool is useful for:
+- Buyers & sellers seeking fair pricing guidance  
+- Landlords & tenants evaluating rental agreements  
+- Investors conducting property market analysis  
+- Real estate professionals enhancing pricing strategies  
 
-The software service accomplishes this goal by aligning all activities with our core values: Healthy, Delicious, Fresh, Simple, Sustainable, Seasonal, Contemporary [American], Mediterranean, Inspired, Quality, Mindful, New Cuisines. Foods focus on Aesthetic Designs, Sensory Appeal, Therapeutic Value, and Variety. 
 
-By leveraging software, artificial intelligence, machine learning, and large language models, we are able to complete food classifcation for bid datasets, improve quality, reduce costs, save time, and simplify the process of eating healthy, delicious, and fresh foods.
-
-![alt text](vegetables.jpg)
+![alt text](nyc_skyline.jpg)
 
 # Table of Contents  📖 
 - [Introduction](#-introduction)
@@ -20,41 +22,60 @@ By leveraging software, artificial intelligence, machine learning, and large lan
 - [Contact](#-contact)
 - [Acknowledgements](#-acknowledgements)
 
-# Features: 
-Nutrition Facts for ingredients
-Nutrient Density Scores for 300 + products  
-Superfood labels. 0, 1
+## Features
+- Predicts **sale** and **rental** values of real estate properties  
+- Incorporates multiple factors including:
+  - Location (city, state, zip code, latitude, longitude, neighborhood data)  
+  - Square footage
+  - Lot size  
+  - Property age & condition  
+  - Amenities & upgrades (e.g., pool, garage, modern appliances)  
+  - Nearby schools, universities, and transit access 
+- Customizable for different geographic regions  
+- Built-in evaluation metrics (RMSE, MAE, R²) for model performance  
+- Extensible to support additional features (e.g., zoning, crime rate, walkability)  
 
-# How to use: 
-Website 
-Apple App Store
-Google Play Store
+## How to Use
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/real-estate-regressor.git
+   cd real-estate-regressor
+2. **Instal dependencies**:
+pip install -r requirements.txt
 
-# Technologies: 
-Firebase 
-Kotlin 
-Python (pandas, scikit-learn, matplotlib, seaborn, plotly.express) 
-React.js
-Swift 
-USDA Farmers Market Directory
-USDA FoodData Central
+3. **Prepare the dataset**:
+Place your property dataset (.csv or .json) inside the data/ folder.
+Ensure it contains columns for price, location, and features.
 
-# License: 
-MIT License 
+4. **Train the model**:
+python train.py --data data/your_dataset.csv
 
-# Contact 📬 
-For inquiries or support:
-Email: info@cypresdoctrine.com
-Website: cypresdoctrine.com
+5. **Make predictions**:
+python predict.py --input sample_property.json
 
-# Acknowledgements 🙏 
-Jennifer Di Noia, PhD 
-Defining Powerhouse Fruits and Vegetables: A Nutrient Density Approach
-https://www.cdc.gov/pcd/issues/2014/13_0390.htm
+6. **Evaluate performance**:
+python evaluate.py --data data/test_set.csv
 
-Marta Guasch-Ferré, PhD & Walter C. Willett, MD 
-https://pubmed.ncbi.nlm.nih.gov/34423871/
+## Technologies
+Python 3.10+
+scikit-learn – regression models and evaluation
+pandas & NumPy – data handling and preprocessing
+matplotlib & seaborn – visualization
+Jupyter Notebook – prototyping and experimentation
+(Optional) XGBoost/LightGBM – advanced gradient boosting methods
 
-Katherine D. McManus, MS, RD, LDN,
-A practical guide to the Mediterranean diet
-https://www.health.harvard.edu/blog/a-practical-guide-to-the-mediterranean-diet-2019032116194
+## License
+This project is licensed under the MIT License.
+You are free to use, modify, and distribute this software with attribution.
+
+## Contact
+For questions, collaborations, or contributions:
+Name: Abraham Doe
+Email: abrahamdoe@gmail.com
+GitHub: BlackArsenic88
+
+## Acknowledgements
+scikit-learn for robust ML utilities
+Kaggle and open real estate datasets for training data
+Open-source contributors and the real estate research community
+Inspiration from industry leaders in PropTech and AI-driven valuation models
