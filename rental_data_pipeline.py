@@ -7,7 +7,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.pipeline import Pipeline
 
 df = pd.read_csv("manhattan.csv")
-print("Manhattan, New York apartment rent regression.")
+print("Apartment rent regression.")
 
 X = df[['bedrooms', 'bathrooms', 'size_sqft', 'building_age_yrs', 
         'floor', 'has_elevator', 'has_roofdeck']]

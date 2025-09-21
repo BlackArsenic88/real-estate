@@ -8,7 +8,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.pipeline import Pipeline
 
 df = pd.read_csv("AmesHousing.csv")
-print("Ames, Iowa real estate selling price regression.")
+print("Real estate selling price regression.")
 
 X = df[['Neighborhood', 'Lot Area', 'Year Built', 'Gr Liv Area']]
 y = df['SalePrice']
@@ -56,8 +56,6 @@ open_house = pd.DataFrame([{
 
 prediction = mlr.predict(open_house)[0]
 print("Predicted price:", f"${prediction:,.2f}")
-
-
 
 
 
