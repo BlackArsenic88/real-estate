@@ -11,9 +11,6 @@ This tool is useful for:
 - Real estate professionals enhancing pricing strategies  
 
 <div style="display: flex; overflow-x: auto; gap: 10px; white-space: nowrap;">
-  <img src="images/dubai.jpg" alt="Dubai" width="300"/>
-  <img src="images/yosemite.jpg" alt="Yosemtie Park" width="300"/>
-  <img src="images/everest.jpg" alt="Mt. Everest" width="300"/>
   <img src="images/rio.jpg" alt="Rio de Janeiro" width="300"/>
 </div>
 
