@@ -11,7 +11,7 @@ This tool is useful for:
 - Real estate professionals enhancing pricing strategies  
 
 <div style="display: flex; overflow-x: auto; gap: 10px; white-space: nowrap;">
-  <img src="images/rio.jpg" alt="Rio de Janeiro" width="300"/>
+  <img src="images/rio.jpg" alt="Rio de Janeiro" style="max-width: 100%; height: auto;"/>
 </div>
 
 # Table of Contents  📖 
