@@ -2,7 +2,7 @@ Project Blackacre 🏙️ ⛰️ 🏖️
 
 ## Introduction 🗝️
 This repository contains machine learning models designed to predict **fair market prices** for both **real estate sales** and **rentals**.  
-The model leverages historical property data and key real estate attributes (e.g. location, sqaure feet, bedrooms, bathrooms, amenities, repair and maintenance costs, etc.) to forecast accurate property valuations.  
+The model leverages historical property data and key real estate attributes (e.g. location, acres, lot size, architecture, sqaure feet, bedrooms, bathrooms, amenities, repair and maintenance costs, etc.) to forecast accurate property valuations.  
 
 This tool is useful for:
 - Buyers & sellers seeking fair pricing guidance  
@@ -27,8 +27,9 @@ This tool is useful for:
 - Predicts **sale** and **rental** values of real estate properties  
 - Incorporates critical factors including:
   - Location (city, state, zip code, latitude, longitude, neighborhood data)  
-  - Square footage
-  - Lot size  
+  - Acres
+  - Lot size
+  - Square footage 
   - Building age
   - Amenities & upgrades (e.g., pool, garage, modern appliances)  
   - Nearby schools, universities, places of interest, and distance to transit (e.g. airports, trains, seaports) 
@@ -50,36 +51,35 @@ This tool is useful for:
     pip install -r requirements.txt
 4. **Prepare the dataset**:
    Place your property dataset (.csv or .json) inside the data/ folder.
-   For defaul settings, ensure your dataset contains columns for "Neighborhood", "Lot Area", "Year Built", "Gr Liv Area" for the selling price regression or "bedrooms", "bathrooms", "size_sqft", "building_age_yrs", "floor", "has_elevator", and "has_roofdeck" for the rental regressor. 
+   For default settings, ensure your dataset contains columns for "Neighborhood", "Lot Area", "Year Built", "Gr Liv Area" for the selling price regression or "bedrooms", "bathrooms", "size_sqft", "building_age_yrs", "floor", "has_elevator", and "has_roofdeck" for the rental regressor. Update panda csv reader filename. 
 5. **Turn on Data Pipeline**:
    ```bash
    python real_estate_data_pipeline.py 
 
 ## Technologies 🛠
 - Python 3.10+ 🐍
-- pandas & NumPy – data handling and preprocessing 🐼
-- scikit-learn – regression models and evaluation 👩‍🔬
-- matplotlib & seaborn – visualization 📈
-- Jupyter Notebook – prototyping and experimentation 🪐
-- (Optional) XGBoost/LightGBM – advanced gradient boosting methods
+- Pandas & NumPy – data handling and preprocessing 🐼
+- Scikit-learn – regression models and evaluation 👩‍🔬
+- Matplotlib & seaborn – visualization 📈
+- Jupyter Notebook  🪐
 
 ## License ⚖️ 
 This project is licensed under a dual license. 
-You are free to use, modify, and distribute this software with attribution, but must open source modifications to the community. Integration into closed source, proprietary systems requires annual subscription and license fees.  
+You are free to use, modify, and distribute this software with attribution, but must open source modifications to the community. Integration into closed source, commercial proprietary systems requires annual subscription and license fees.  
 See license.txt for details. 
 
 ## Contact 📬
 For questions, collaborations, or contributions:
 - Name: Abraham Doe
 - Email: abrahamdoe@gmail.com
-- GitHub: github.com/BlackArsenic88
-
+- GitHub: http://github.com/BlackArsenic88  
+   
 ## Acknowledgements 🙏
 - Scikit-learn for robust ML utilities
 - UC Irvine, Kaggle and open source real estate datasets for training data
 - Open-source contributors and the real estate research community
 - Inspiration from industry leaders in AI-driven valuation models
-- I am grateful. Thank you! 
+- I am grateful. 
 
 
 
