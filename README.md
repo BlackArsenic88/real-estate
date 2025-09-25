@@ -63,7 +63,7 @@ This tool is useful for:
 - Matplotlib & seaborn – visualization 📈
 - Jupyter Notebook  🪐
 
-# License ⚖️
+# License⚖️
 This project is licensed under a dual license. 
 You are free to use, modify, and distribute this software with attribution, but must open source modifications to the community. Integration into closed source, commercial proprietary systems requires annual subscription and license fees.  
 See license.txt for details. 
@@ -74,7 +74,7 @@ For questions, collaborations, or contributions:
 - Email: abrahamdoe@gmail.com
 - GitHub: [Portfolio](http://github.com/BlackArsenic88) 
    
-# Acknowledgements 🙏
+# Acknowledgements🙏
 - Scikit-learn for robust ML utilities
 - UC Irvine, Kaggle and open source real estate datasets for training data
 - Open-source contributors and the real estate research community
