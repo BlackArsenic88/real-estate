@@ -18,7 +18,7 @@ This tool is useful for:
 - [Features](#features)
 - [How to Use](#how-to-use-demo-model)
 - [Technologies](#technologies)
-- [License](#license)
+- [License](license.txt)
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
 
