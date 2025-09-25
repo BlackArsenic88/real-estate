@@ -14,8 +14,7 @@ This tool is useful for:
   <img src="images/rio.jpg" alt="Rio de Janeiro" style="max-width: 100%; height: auto;"/>
 </div>
 
-# Table of Contents  📖 
-- [Introduction](#real-estate)
+# Table of Contents📖
 - [Features](#features)
 - [How to Use](#how-to-use-demo-model)
 - [Technologies](#technologies)
@@ -23,7 +22,7 @@ This tool is useful for:
 - [Contact](#contact)
 - [Acknowledgements](#acknowledgements)
 
-# Features ✨
+# Features✨
 - Predicts **sale** and **rental** values of real estate properties  
 - Incorporates critical factors including:
   - Location (city, state, zip code, latitude, longitude, neighborhood data)  
@@ -39,7 +38,7 @@ This tool is useful for:
 - Built-in evaluation metrics (RMSE, MAE, R²) for model accuracy  
 - Extensible to support additional features (e.g., zoning, crime rate, walkability)  
 
-# How to Use Demo Model 🤖
+# How to Use Demo Model🤖
 1. **Fork the repository**:
    Go to: https://github.com/blackarsenic88/real-estate.git
    In the top-right corner, click "Fork"
@@ -57,19 +56,19 @@ This tool is useful for:
    python real_estate_data_pipeline.py 
 
 
-# Technologies 🛠
+# Technologies🛠
 - Python 3.10+ 🐍
 - Pandas & NumPy – data handling and preprocessing 🐼
 - Scikit-learn – regression models and evaluation 👩‍🔬
 - Matplotlib & seaborn – visualization 📈
 - Jupyter Notebook  🪐
 
-# License ⚖️ 
+# License ⚖️
 This project is licensed under a dual license. 
 You are free to use, modify, and distribute this software with attribution, but must open source modifications to the community. Integration into closed source, commercial proprietary systems requires annual subscription and license fees.  
 See license.txt for details. 
 
-# Contact 📬
+# Contact📬
 For questions, collaborations, or contributions:
 - Name: Abraham Doe
 - Email: abrahamdoe@gmail.com
